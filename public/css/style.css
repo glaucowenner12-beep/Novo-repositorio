@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #460659;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    width: 80%;
+    margin: 0 auto 15px auto;
+    gap: 10px;             
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #85068a;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn.delete {
+    background-color:  #d61002;
+}
+
+.search-form {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: none;       
+    padding: 0;              
+    margin: 0;
+    justify-content: center;  
+    flex-wrap: wrap;         
+}
+
+.search-form input {
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.btn-search {
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    background-color:  #85068a;
+    color: white;
+}
+
+.btn-clear {
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    background-color: #d61002;
+    color: white;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 10px;
+    font-size: 14px;
+    background-color: #85068a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        width: 90%;
+    }
+
+    table, form {
+        width: 95%;
+    }
+
+    .search-form input {
+        width: 100%;
+    }
+
+    .btn, .btn-search, .btn-clear {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+}
+ 

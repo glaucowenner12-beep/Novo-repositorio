@@ -1,0 +1,33 @@
+<h1>Produtos da Loja</h1>
+
+<div class="top-bar">
+    <a href="/add" class="btn">Adicionar Produto</a>
+
+    <form method="GET" action="/" class="search-form">
+        <input type="text" name="busca" placeholder="Buscar por nome ou categoria" value="{{busca}}">
+        <button type="submit" class="btn-search">Buscar</button>
+        <a href="/" class="btn-clear">Limpar</a>
+    </form>
+</div>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+    </tr>
+    {{#each produtos}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.nome}}</td>
+        <td>R$ {{this.preco}}</td>
+        <td>{{this.categoria}}</td>
+        <td>
+            <a href="/edit/{{this.id}}" class="btn">Editar</a>
+            <a href="/delete/{{this.id}}" class="btn delete" onclick="return confirm('Deseja realmente deletar?')">Deletar</a>
+        </td>
+    </tr>
+    {{/each}}
+</table>
