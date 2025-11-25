@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Loja de Produtos - CRUD em Node.js
 
 ## Descrição
@@ -90,3 +91,6 @@ Autor
 
 Aluno: Glauco wenner Martins
 Disciplina: Programação Web e Mobile.
+=======
+# Novo-repositorio
+>>>>>>> 7468cb3007a443cff3b18de00329341e4bd47c17
